@@ -1,6 +1,8 @@
 
 class Cliente:
     
+    # Método constructor
+
     def __init__(self, nombre,apellido, dni, mail, telefono):
         self.nombre = nombre
         self.apellido = apellido
@@ -9,6 +11,8 @@ class Cliente:
         self.telefono = telefono
         self.fecha_compra = []
         self.producto_comprado = []       
+
+    # Método especial __srt__
                 
     def __str__(self):
         return f'''
@@ -21,6 +25,7 @@ class Cliente:
                           Producto comprado: {self.producto_comprado}
                           Fecha en que se realizó la compra: {self.fecha_compra}'''    
    
+    # Métodos particulares de la clase:
           
     def guardar_productosComprados(self, producto):        
         
@@ -33,7 +38,7 @@ class Cliente:
         while respuesta.upper() == "SI":
             
             producto = input("Ingrese el nombre del producto comprado: ")
-            
+
             self.producto_comprado.append(producto)
             
             respuesta = str(input("Cargar más productos ?").upper())
