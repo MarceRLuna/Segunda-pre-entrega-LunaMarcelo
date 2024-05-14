@@ -1,7 +1,9 @@
+README.md
 setup.py
+package/Primera-pre-entrega.py
 package/__init__.py
-package/customer.py
-package/funtions.py
+package/cliente.py
+package/funciones.py
 primer_paquete.egg-info/PKG-INFO
 primer_paquete.egg-info/SOURCES.txt
 primer_paquete.egg-info/dependency_links.txt
